@@ -6,7 +6,7 @@ import { animals } from '../../data.js';
 
 export default function Main() {
   return (
-    <main style={{ backgroundImage: `url(${backgroundImg})` }}>
+    <main style={{ backgroundImage: `url(${backgroundImg})`, top }}>
       {animals.map((item) => (
         <Animal key={item.name} {...item} />
       ))}
